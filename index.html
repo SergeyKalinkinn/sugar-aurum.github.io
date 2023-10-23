@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>SUGAR AURUM</title>
+  <link rel="preload" href="../fonts/DaysOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body id="up" class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <picture>
+          <source srcset="img/logo.webp" type="image/webp">
+          <img loading="lazy" src="img/logo.png" class="image" width="138" height="108"
+            alt="Логотип салона студии SUGAR AURUM">
+        </picture>
+      </div>
+      <nav class="nav" data-menu title="меню">
+        <ul class="nav__list">
+          <li class="nav__item" data-menu-item>
+            <a class="nav__link nav__link--drop" href="#price">Услуги и цены</a>
+          </li>
+          <li class="nav__item" data-menu-item>
+            <a class="nav__link" href="#procedure">Подготовка к процедуре</a>
+          </li>
+          <li class="nav__item" data-menu-item>
+            <a class="nav__link" href="#contacts">Контакты</a>
+          </li>
+          <li class="nav__item" data-menu-item>
+            <a class="nav__link btn-reset" data-graph-path="form-popup"" href="#">Записаться</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__social">
+        <a class="header__social-phone" title="Позвонить нам" href="tel:+79053234811">8 (905) 323-48-11</a>
+        <ul class="social" title="Написать нам">
+          <li class="social__item">
+            <a class="social__link" href="https://www.instagram.com/p/CMklvfYsfvn/?igshid=YmMyMTA2M2Y=" target="_blank" aria-label="Написать нам в Instagram">
+              <svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/@olenkasherstneva" target="_blank" aria-label="Написать нам в Telegram">
+              <svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 496 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://wa.me/+79053234811" target="_blank" aria-label="Написать нам в Whatsapp">
+              <svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://wa.me/+79053234811" target="_blank" aria-label="Написать нам в Viber">
+              <svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M444 49.9C431.3 38.2 379.9.9 265.3.4c0 0-135.1-8.1-200.9 52.3C27.8 89.3 14.9 143 13.5 209.5c-1.4 66.5-3.1 191.1 117 224.9h.1l-.1 51.6s-.8 20.9 13 25.1c16.6 5.2 26.4-10.7 42.3-27.8 8.7-9.4 20.7-23.2 29.8-33.7 82.2 6.9 145.3-8.9 152.5-11.2 16.6-5.4 110.5-17.4 125.7-142 15.8-128.6-7.6-209.8-49.8-246.5zM457.9 287c-12.9 104-89 110.6-103 115.1-6 1.9-61.5 15.7-131.2 11.2 0 0-52 62.7-68.2 79-5.3 5.3-11.1 4.8-11-5.7 0-6.9.4-85.7.4-85.7-.1 0-.1 0 0 0-101.8-28.2-95.8-134.3-94.7-189.8 1.1-55.5 11.6-101 42.6-131.6 55.7-50.5 170.4-43 170.4-43 96.9.4 143.3 29.6 154.1 39.4 35.7 30.6 53.9 103.8 40.6 211.1zm-139-80.8c.4 8.6-12.5 9.2-12.9.6-1.1-22-11.4-32.7-32.6-33.9-8.6-.5-7.8-13.4.7-12.9 27.9 1.5 43.4 17.5 44.8 46.2zm20.3 11.3c1-42.4-25.5-75.6-75.8-79.3-8.5-.6-7.6-13.5.9-12.9 58 4.2 88.9 44.1 87.8 92.5-.1 8.6-13.1 8.2-12.9-.3zm47 13.4c.1 8.6-12.9 8.7-12.9.1-.6-81.5-54.9-125.9-120.8-126.4-8.5-.1-8.5-12.9 0-12.9 73.7.5 133 51.4 133.7 139.2zM374.9 329v.2c-10.8 19-31 40-51.8 33.3l-.2-.3c-21.1-5.9-70.8-31.5-102.2-56.5-16.2-12.8-31-27.9-42.4-42.4-10.3-12.9-20.7-28.2-30.8-46.6-21.3-38.5-26-55.7-26-55.7-6.7-20.8 14.2-41 33.3-51.8h.2c9.2-4.8 18-3.2 23.9 3.9 0 0 12.4 14.8 17.7 22.1 5 6.8 11.7 17.7 15.2 23.8 6.1 10.9 2.3 22-3.7 26.6l-12 9.6c-6.1 4.9-5.3 14-5.3 14s17.8 67.3 84.3 84.3c0 0 9.1.8 14-5.3l9.6-12c4.6-6 15.7-9.8 26.6-3.7 14.7 8.3 33.4 21.2 45.8 32.9 7 5.7 8.6 14.4 3.8 23.6z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero">
+  <div class="container">
+    <div class="hero__wrapper">
+      <h1 class="title hero__mb13">Идеально гладкая кожа с помощью шугаринга в Саратове</h1>
+      <h2 class="title title_fz_40 hero__mb35">Попробуй со скидкой до 50%</h2>
+      <h3 class="hero__text">Избавься от нежелательных волос на длительный срок с гарантированным результатом
+      </h3>
+      <p class="hero__subtext">Самый безопастный вид эпиляции</p>
+      <button class="button hero__mb65 btn-reset" data-graph-path="form-popup">Записаться</button>
+
+      <div class="hero__inner">
+        <span class="hero__litle-text">— Скидка предоставляется на любую первую процедуру или покупку абонементов на
+          комплекс</span>
+        <span class="hero__litle-text">— Гарантия результата при прохождении от 8 и более процедур</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="benefits">
+  <div class="container">
+    <h3 class="title">Преимущества</h3>
+    <div class="swiper2" data-mobile="false">
+      <div class="benefits__wrapper swiper-wrapper">
+        <div class="benefits__item">
+          <p class="benefits__text">Гарантируем полное избавление от нежелательных волос на длительный срок **</p>
+        </div>
+        <div class="benefits__item">
+          <p class="benefits__text">Сделаем так, чтобы вы всегда выглядели исключительно на отлично!</p>
+        </div>
+        <div class="benefits__item">
+          <p class="benefits__text">Для вас всегда любая музыка на любой вкус!</p>
+        </div>
+        <div class="benefits__item">
+          <p class="benefits__text">Видимые результаты уже с первой процедуры</p>
+        </div>
+        <div class="benefits__item">
+          <p class="benefits__text">Квалифицированный мастер с опытом работы 4 года</p>
+        </div>
+        <div class="benefits__item">
+          <p class="benefits__text">Работаем для вас ежедневно с 9.00 до 22.00 и дольше!</p>
+        </div>
+        <div class="benefits__item">
+          <p class="benefits__text">Всегда угостим вас чашечкой ароматного кофе или чая!</p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="benefits__btns">
+      <div class="benefits__item-btn">
+        <button class="button button_aurum btn-reset" data-graph-path="form-popup"">Записаться</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="price" class="price">
+  <div class="container">
+    <h2 class="title title_aurum title_mb50">Услуги и цены</h2>
+    <div class="price__wrapper">
+      <div class="price__item">
+        <div class="price__item-info">
+          <h3 class="price__item-title">Ноги полностью</h3>
+          <span class="price__item-old">900 руб.</span>
+          <p class="price__item-new">700 руб.</p>
+          <button class="button button_price btn-reset" data-graph-path="form-popup"">Записаться</button>
+        </div>
+        <div class="price__item-img">
+          <picture>
+            <source srcset="../img/price/cart-1.webp" type="image/webp">
+            <img loading="lazy" src="../img/price/cart-1.png" class="image" width="150" height="100"
+              alt="Изображение услуги">
+          </picture>
+        </div>
+      </div>
+      <div class="price__item">
+        <div class="price__item-info">
+          <h3 class="price__item-title">Подмышечная</h3>
+          <span class="price__item-old">300 руб.</span>
+          <p class="price__item-new">200 руб.</p>
+          <button class="button button_price btn-reset" data-graph-path="form-popup"">Записаться</button>
+        </div>
+        <div class="price__item-img">
+          <picture>
+            <source srcset="../img/price/cart-2.webp" type="image/webp">
+            <img loading="lazy" src="../img/price/cart-2.png" class="image" width="150" height="100"
+              alt="Изображение услуги">
+          </picture>
+        </div>
+      </div>
+      <div class="price__item">
+        <div class="price__item-info">
+          <h3 class="price__item-title">Голени/Бедра</h3>
+          <span class="price__item-old">450 руб.</span>
+          <p class="price__item-new">350 руб.</p>
+          <button class="button button_price btn-reset" data-graph-path="form-popup"">Записаться</button>
+        </div>
+        <div class="price__item-img">
+          <picture>
+            <source srcset="../img/price/cart-3.webp" type="image/webp">
+            <img loading="lazy" src="../img/price/cart-3.png" class="image" width="150" height="100"
+              alt="Изображение услуги">
+          </picture>
+        </div>
+      </div>
+      <div class="price__item">
+        <div class="price__item-info">
+          <h3 class="price__item-title">Бикини</h3>
+          <span class="price__item-old">850 руб.</span>
+          <p class="price__item-new">700 руб.</p>
+          <button class="button button_price btn-reset" data-graph-path="form-popup"">Записаться</button>
+        </div>
+        <div class="price__item-img">
+          <picture>
+            <source srcset="../img/price/cart-4.webp" type="image/webp">
+            <img loading="lazy" src="../img/price/cart-4.png" class="image" width="150" height="100"
+              alt="Изображение услуги">
+          </picture>
+        </div>
+      </div>
+      <div class="price__item">
+        <div class="price__item-info">
+          <h3 class="price__item-title">Руки полностью</h3>
+          <span class="price__item-old">600 руб.</span>
+          <p class="price__item-new">500 руб.</p>
+          <button class="button button_price btn-reset" data-graph-path="form-popup"">Записаться</button>
+        </div>
+        <div class="price__item-img">
+          <picture>
+            <source srcset="../img/price/cart-5.webp" type="image/webp">
+            <img loading="lazy" src="../img/price/cart-5.png" class="image" width="150" height="100"
+              alt="Изображение услуги">
+          </picture>
+        </div>
+      </div>
+      <div class="price__item">
+        <div class="price__item-info">
+          <h3 class="price__item-title">Усики</h3>
+          <span class="price__item-old">350 руб.</span>
+          <p class="price__item-new">200 руб.</p>
+          <button class="button button_price btn-reset" data-graph-path="form-popup"">Записаться</button>
+        </div>
+        <div class="price__item-img">
+          <picture>
+            <source srcset="../img/price/cart-6.webp" type="image/webp">
+            <img loading="lazy" src="../img/price/cart-6.png" class="image" width="150" height="100"
+              alt="Изображение услуги">
+          </picture>
+        </div>
+      </div>
+      <div class="price__item">
+        <div class="price__item-info">
+          <h3 class="price__item-title">Руки до локтя</h3>
+          <span class="price__item-old">350 руб.</span>
+          <p class="price__item-new">250 руб.</p>
+          <button class="button button_price btn-reset" data-graph-path="form-popup"">Записаться</button>
+        </div>
+        <div class="price__item-img">
+          <picture>
+            <source srcset="../img/price/cart-7.webp" type="image/webp">
+            <img loading="lazy" src="../img/price/cart-7.png" class="image" width="150" height="100"
+              alt="Изображение услуги">
+          </picture>
+        </div>
+      </div>
+      <div class="price__item">
+        <div class="price__item-info">
+          <h3 class="price__item-title">Комплекс</h3>
+          <span class="price__item-old">1600 руб.</span>
+          <p class="price__item-new">1350 руб.</p>
+          <button class="button button_price btn-reset" data-graph-path="form-popup"">Записаться</button>
+        </div>
+        <div class="price__item-img">
+          <picture>
+            <source srcset="../img/price/cart-8.webp" type="image/webp">
+            <img loading="lazy" src="../img/price/cart-8.png" class="image" width="150" height="100"
+              alt="Изображение услуги">
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div class="price__inner">
+      <div class="price__line"></div>
+      <div class="price__text">Напоминаем, что для лучшего результата необходимо брать курс от 5-ти процедур. Также
+        важно соблюдать рекомендации</div>
+    </div>
+  </div>
+</section>
+
+      <section class="services">
+  <div class="container">
+    <h2 class="title">Дополнительные услуги</h2>
+    <div class="swiper3" data-mobile="false">
+      <div class="services__wrapper swiper-wrapper">
+        <div class="services__item">
+          <a class="services__link" href="../manicure.html">
+            <picture>
+              <source srcset="img/manicure.webp" type="image/webp">
+              <img loading="lazy" src="img/manicure.png" class="image" width="283" height="283"
+                alt="Изображение услуги маникюр">
+            </picture>
+            <h2 class="services__descr">Маникюр</h2>
+          </a>
+        </div>
+        <div class="services__item">
+          <a class="services__link" href="../pedicure.html">
+            <picture>
+              <source srcset="img/pedicure.webp" type="image/webp">
+              <img loading="lazy" src="img/pedicure.jpg" class="image" width="283" height="283"
+                alt="Изображение услуги маникюр">
+            </picture>
+            <h2 class="services__descr">Педикюр</h2>
+          </a>
+        </div>
+        <div class="services__item">
+          <a class="services__link" href="../candle.html">
+            <picture>
+              <source srcset="img/candle.webp" type="image/webp">
+              <img loading="lazy" src="img/candle.jpg" class="image" width="283" height="283"
+                alt="Изображение услуги маникюр">
+            </picture>
+            <h2 class="services__descr">Восковые свечи</h2>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-pagination pag-3"></div>
+    </div>
+  </div>
+</section>
+
+      <section class="specialists">
+  <div class="container">
+    <h2 class="title title_white">Наши специалисты</h2>
+    <div class="specialists__wrapper">
+      <div class="specialists__img">
+        <picture>
+          <source srcset="img/special.webp" type="image/webp">
+          <img loading="lazy" src="img/special.jpg" class="image" width="300" height="300" alt="Фото специалиста">
+        </picture>
+      </div>
+      <div class="specialists__name">Шерстнева<br>Ольга Александровна</div>
+      <div class="specialists__descr">Сертифицированный<br>мастер шугаринга,<br>стаж работы более 3-х лет</div>
+      <div class="accordion__wrapper">
+        <ul class="accordion__list">
+          <li class="accordion__item">
+            <button class="accordion__control" aria-expanded="false">
+              <span class="accordion__item-title">Посмотреть сертификат</span>
+              <span class="accordion__icon"></span>
+            </button>
+            <div class="accordion__content" aria-hidden="true">
+              <picture>
+                <source srcset="../img/sert.webp" type="image/webp">
+                <img loading="lazy" src="../img/sert.jpg" class="image" width="350" height="350"
+                  alt="Изображение сертификата">
+              </picture>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="consultation">
+  <div class="container">
+    <h3 class="title">Запишитесь на бесплатную<br>консультацию</h3>
+    <!-- <div class="consultation__wrapper"> -->
+      <div class="consultation__subtitle">В ходе которой Вы узнаете:</div>
+      <ul class="consultation__list">
+        <p>Противопоказания и кому не подойдет процедура</p>
+        <p>Необходимое количество процедур для<br>гарантированного результата</p>
+        <p>Подготовка до и после процедуры</p>
+        <p>Другие интересующие вопросы</p>
+      </ul>
+      <div class="consultation__inner">
+        <button class="button button_long btn-reset" data-graph-path="form-popup"">Записаться на консультацию</button>
+      </div>
+    <!-- </div> -->
+  </div>
+</section>
+
+      <section id="procedure" class="procedure">
+  <div class="container">
+    <div class="tabs" data-tabs="tab">
+      <ul class="tabs__nav">
+        <li class="tabs__nav-item">
+          <span class="tabs__ps1"></span>
+          <button class="tabs__nav-btn tabs__nav-btn--active" type="button">Подготовка</button>
+        </li>
+        <li class="tabs__nav-item">
+          <span class="tabs__ps2"></span>
+          <button class="tabs__nav-btn" type="button">Проведение процедуры</button>
+        </li>
+        <li class="tabs__nav-item">
+          <span class="tabs__ps3"></span>
+          <button class="tabs__nav-btn" type="button">После процедуры</button>
+        </li>
+      </ul>
+      <div class="tabs__content">
+        <div class="tabs__panel">
+          <div class="tabs__panel-wrapper">
+            <h3 class="tabs__panel-title">ПОДГОТОВКА К ПРОЦЕДУРЕ</h3>
+            <div class="tabs__panel-text">
+              <p>• Длина волос не менее 4 мм.</p>
+              <p>• Накануне проскрабировать эпилируемые зоны (против роста, приподнимая волоски).</p>
+              <p>• Принять душ до процедуры.</p>
+              <p>• Не наносить крема, лосьоны, дезодоранты, масла.</p>
+              <p>• Взять с собой свободное сменное белье.</p>
+            </div>
+            <button class="button button_long btn-reset" data-graph-path="form-popup"">Записаться на процедуру</button>
+          </div>
+        </div>
+        <div class="tabs__panel">
+          <div class="tabs__panel-wrapper">
+            <h3 class="tabs__panel-title">Процедуру проводят следующим образом:</h3>
+            <div class="tabs__panel-text">
+              <p>• На участок, где будут проводить шугаринг, наносят тальк.</p>
+              <p>• На подготовленную поверхность кожи наносят тонким слоем сахарную пасту. Затем резким движением его
+                снимают вместе с волосками.</p>
+              <p>• Обрабатывают успокаивающими средствами (сливки и эмульсии).</p>
+              <p>• Проводят эту процедуру обычно один раз в три или четыре недели.</p>
+            </div>
+            <button class="button button_long btn-reset" data-graph-path="form-popup"">Записаться на процедуру</button>
+          </div>
+        </div>
+        <div class="tabs__panel">
+          <div class="tabs__panel-wrapper">
+            <h3 class="tabs__panel-title">После ПРОЦЕДУРЫ в течение 24 часов нельзя:</h3>
+            <div class="tabs__panel-text">
+              <p>• Загорать под прямыми солнечными лучами. Использовать препаратов для загара и бронзаторов.</p>
+              <p>• Ходить в сауну/принимать ванну.</p>
+              <p>• Использовать крема, дезодоранты, лосьон.</p>
+              <p>• нЗаниматься спортом (потеть).</p>
+            </div>
+            <button class="button button_long btn-reset" data-graph-path="form-popup"">Записаться на процедуру</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+      <section class="about">
+  <div class="container">
+    <h2 class="title"> О моей работе </h2>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="../img/about/about_1.webp" type="image/webp">
+            <img loading="lazy" src="../img/about/about_1.jpg" class="image" width="366" height="" alt="426">
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="../img/about/about_2.webp" type="image/webp">
+            <img loading="lazy" src="../img/about/about_2.jpg" class="image" width="366" height="" alt="426">
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="../img/about/about_3.webp" type="image/webp">
+            <img loading="lazy" src="../img/about/about_3.jpg" class="image" width="366" height="" alt="426">
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="../img/about/about_4.webp" type="image/webp">
+            <img loading="lazy" src="../img/about/about_4.jpg" class="image" width="366" height="" alt="426">
+          </picture>
+        </div>
+      </div>
+      <div class="swiper-pagination pag-1"></div>
+    </div>
+  </div>
+</section>
+
+      <section class="review">
+  <div class="container">
+    <h2 class="title">Отзывы</h2>
+    <div class="swiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slider-content">
+            <picture>
+              <source srcset="../img/not-found.webp" type="image/webp">
+              <img loading="lazy" src="../img/not-found.jpg" class="image" width="366" height="" alt="426">
+            </picture>
+          <p class="review__name">Екатерина Краснова</p>
+          <p class="review__text">Многих мастеров перепробовала, но к Ольге буду ходить теперь всегда! Для меня она
+            лучшая
+            и стараюсь записываться заранее, потому что у нее с каждым разом все больше
+            клиентов!!! 🥰</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slider-content">
+              <picture>
+                <source srcset="../img/not-found.webp" type="image/webp">
+                <img loading="lazy" src="../img/not-found.jpg" class="image" width="366" height="" alt="426">
+              </picture>
+              <p class="review__name">Екатерина Давыдова</p>
+              <p class="review__text">Мастер, не только приятная девушка, но и профессионал своего дела. Работает быстро и
+              качественно по очень демокративным ценам. Советую.</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slider-content">
+              <picture>
+                <source srcset="../img/not-found.webp" type="image/webp">
+                <img loading="lazy" src="../img/not-found.jpg" class="image" width="366" height="" alt="426">
+              </picture>
+            <p class="review__name">Анна Ковылина</p>
+            <p class="review__text">Бываю постоянно у этого мастера, все очень нравиться чистое помещение, душевная
+              атмосфера и самое главное быстрая безболезненная работа и хочу заметить девушка очень общительная и
+              чистоплотна советую посетить данного мастера</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slider-content">
+              <picture>
+                <source srcset="../img/not-found.webp" type="image/webp">
+                <img loading="lazy" src="../img/not-found.jpg" class="image" width="366" height="" alt="426">
+              </picture>
+            <p class="review__name">Екатерина Давыдова</p>
+            <p class="review__text">Быстро и качественно работает мастер. Всё материалы одноразовые. Душевная-мастер,
+              понимающая чем занимается. Комфортное место.</p>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-pagination pag-2"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+
+      <section class="banner">
+  <div class="container">
+    <h2 class="title">Получи подарок,<br>подписавшись на наc*</h2>
+    <div class="banner__social">
+      <ul class="banner__social-list" title="Написать нам">
+        <li class="banner__social-item">
+          <a class="banner__social-link" href="https://www.instagram.com/p/CMklvfYsfvn/?igshid=YmMyMTA2M2Y=" target="_blank" aria-label="Написать нам в Instagram">
+            <svg class="banner__social-icon" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+            </svg>
+          </a>
+        </li>
+        <li class="banner__social-item">
+          <a class="banner__social-link" href="https://t.me/@olenkasherstneva" target="_blank" aria-label="Написать нам в Telegram">
+            <svg class="banner__social-icon" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 496 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z" />
+            </svg>
+          </a>
+        </li>
+        <li class="banner__social-item">
+          <a class="banner__social-link" href="https://wa.me/+79053234811" target="_blank" aria-label="Написать нам в Whatsapp">
+            <svg class="banner__social-icon" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+            </svg>
+          </a>
+        </li>
+        <li class="banner__social-item">
+          <a class="banner__social-link" href="https://wa.me/+79053234811" target="_blank" aria-label="Написать нам в Viber">
+            <svg class="banner__social-icon" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M444 49.9C431.3 38.2 379.9.9 265.3.4c0 0-135.1-8.1-200.9 52.3C27.8 89.3 14.9 143 13.5 209.5c-1.4 66.5-3.1 191.1 117 224.9h.1l-.1 51.6s-.8 20.9 13 25.1c16.6 5.2 26.4-10.7 42.3-27.8 8.7-9.4 20.7-23.2 29.8-33.7 82.2 6.9 145.3-8.9 152.5-11.2 16.6-5.4 110.5-17.4 125.7-142 15.8-128.6-7.6-209.8-49.8-246.5zM457.9 287c-12.9 104-89 110.6-103 115.1-6 1.9-61.5 15.7-131.2 11.2 0 0-52 62.7-68.2 79-5.3 5.3-11.1 4.8-11-5.7 0-6.9.4-85.7.4-85.7-.1 0-.1 0 0 0-101.8-28.2-95.8-134.3-94.7-189.8 1.1-55.5 11.6-101 42.6-131.6 55.7-50.5 170.4-43 170.4-43 96.9.4 143.3 29.6 154.1 39.4 35.7 30.6 53.9 103.8 40.6 211.1zm-139-80.8c.4 8.6-12.5 9.2-12.9.6-1.1-22-11.4-32.7-32.6-33.9-8.6-.5-7.8-13.4.7-12.9 27.9 1.5 43.4 17.5 44.8 46.2zm20.3 11.3c1-42.4-25.5-75.6-75.8-79.3-8.5-.6-7.6-13.5.9-12.9 58 4.2 88.9 44.1 87.8 92.5-.1 8.6-13.1 8.2-12.9-.3zm47 13.4c.1 8.6-12.9 8.7-12.9.1-.6-81.5-54.9-125.9-120.8-126.4-8.5-.1-8.5-12.9 0-12.9 73.7.5 133 51.4 133.7 139.2zM374.9 329v.2c-10.8 19-31 40-51.8 33.3l-.2-.3c-21.1-5.9-70.8-31.5-102.2-56.5-16.2-12.8-31-27.9-42.4-42.4-10.3-12.9-20.7-28.2-30.8-46.6-21.3-38.5-26-55.7-26-55.7-6.7-20.8 14.2-41 33.3-51.8h.2c9.2-4.8 18-3.2 23.9 3.9 0 0 12.4 14.8 17.7 22.1 5 6.8 11.7 17.7 15.2 23.8 6.1 10.9 2.3 22-3.7 26.6l-12 9.6c-6.1 4.9-5.3 14-5.3 14s17.8 67.3 84.3 84.3c0 0 9.1.8 14-5.3l9.6-12c4.6-6 15.7-9.8 26.6-3.7 14.7 8.3 33.4 21.2 45.8 32.9 7 5.7 8.6 14.4 3.8 23.6z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p class="banner__text">Акция действует единоразово совместно с покупкой любой другой процедуры шугаринга</div>
+  </div>
+</section>
+
+      <section class="questions">
+  <div class="container">
+    <h2 class="title title_aurum">Ответы на часто задаваемые вопросы</h2>
+    <div class="questions__wrapper">
+      <ul class="questions__list">
+        <li class="questions__item">
+          <button class="questions__control" aria-expanded="false">
+            <span class="questions__item-title">Насколько болезненна процедура шугаринга?</span>
+            <span class="questions__icon"></span>
+          </button>
+          <div class="questions__content" aria-hidden="true">
+            Шугаринг — это метод удаления волос с помощью сахара. Для этого используется сахарная паста, похожая на густую тянущуюся карамель. Многих клиентов пугает болезненность процедуры, но с шугарингом этого бояться не стоит. Это безболезненный способ сделать кожу гладкой и ухоженной.
+          </div>
+        </li>
+        <li class="questions__item">
+          <button class="questions__control" aria-expanded="false">
+            <span class="questions__item-title">Какая подготовка необходима к первому сеансу?</span>
+            <span class="questions__icon"></span>
+          </button>
+          <div class="questions__content" aria-hidden="true">
+            Чтобы правильно подготовиться к эпиляции воском или шугарингу (в том числе зоны бикини) в первый и последующие разы необходимо за 3-4 дня до процедуры проскрабировать кожу места, в котором будут удалены волосы. Это поможет удалить ороговевшие частички кожи и увеличить сцепление волосков с сахарной пастой или воском.
+          </div>
+        </li>
+        <li class="questions__item">
+          <button class="questions__control" aria-expanded="false">
+            <span class="questions__item-title">Как часто необходимо проводить процедуру шугаринга?</span>
+            <span class="questions__icon"></span>
+          </button>
+          <div class="questions__content" aria-hidden="true">
+            Частота процедур не зависит от типа кожи, но зависит от скорости роста волос, которая у всех разная. На скорость роста волос, в частности, влияет гормональный фон. В среднем же процедуру проводят раз в 3-4 недели.
+          </div>
+        </li>
+        <li class="questions__item">
+          <button class="questions__control" aria-expanded="false">
+            <span class="questions__item-title">Какой уход нужен коже после эпиляции сахаром?</span>
+            <span class="questions__icon"></span>
+          </button>
+          <div class="questions__content" aria-hidden="true">
+            В течение первых суток уход после процедуры шугаринга подразумевает: воздержание от использования дезодоранта (при необходимости допускается заменить его на тальк); отказ от посещения сауны, визита в баню или солярий; исключение активных физических нагрузок.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="best">
+  <div class="container">
+    <h2 class="title title_mw440">Шугаринг лучший метод удаления волос!</h2>
+  </div>
+</section>
+
+      <section class="order">
+  <div class="container">
+    <h2 class="title title_aurum">Записаться на процедуру</h2>
+    <form action="#" class="form-1" method="POST" enctype="multipart/form-data">
+      <label class="form__label">
+      <input type="text" name="name" data-validate-field="name" size="30" class="input-reset form__input input-name" placeholder="Имя">
+      </label>
+      <label class="form__label">
+        <input type="tel" name="tel" data-validate-field="tel" size="30" class="input-reset form__input input-tel" placeholder="Телефон">
+      </label>
+      <button class="button button_aurum btn-reset form__btn">Отправить</button>
+    </form>
+  </div>
+</section>
+
+      <section id="contacts" class="contacts">
+  <div class="container">
+    <div class="contacts__wrapper">
+      <div id="map-test" class="map"></div>
+      <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+      <div class="contacts__info">
+          <address class="contacts__addr">«SUGAR AURUM»<br>Саратов, ул. Блинова 52В</address>
+          <a class="contacts__phone" href="tel:+79053234811">8 (905) 323-48-11</a>
+          <div class="contacts__social">
+            <ul class="contacts__social-list" title="Написать нам">
+              <li class="contacts__social-item">
+                <a class="contacts__social-link" href="https://www.instagram.com/p/CMklvfYsfvn/?igshid=YmMyMTA2M2Y=" target="_blank" aria-label="Написать нам в Instagram">
+                  <svg class="contacts__social-icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__social-item">
+                <a class="contacts__social-link" href="https://t.me/@olenkasherstneva" target="_blank" aria-label="Написать нам в Telegram">
+                  <svg class="contacts__social-icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__social-item">
+                <a class="contacts__social-link" href="https://wa.me/+79053234811" target="_blank" aria-label="Написать нам в Whatsapp">
+                  <svg class="contacts__social-icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__social-item">
+                <a class="contacts__social-link" href="https://wa.me/+79053234811" target="_blank" aria-label="Написать нам в Viber">
+                  <svg class="contacts__social-icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M444 49.9C431.3 38.2 379.9.9 265.3.4c0 0-135.1-8.1-200.9 52.3C27.8 89.3 14.9 143 13.5 209.5c-1.4 66.5-3.1 191.1 117 224.9h.1l-.1 51.6s-.8 20.9 13 25.1c16.6 5.2 26.4-10.7 42.3-27.8 8.7-9.4 20.7-23.2 29.8-33.7 82.2 6.9 145.3-8.9 152.5-11.2 16.6-5.4 110.5-17.4 125.7-142 15.8-128.6-7.6-209.8-49.8-246.5zM457.9 287c-12.9 104-89 110.6-103 115.1-6 1.9-61.5 15.7-131.2 11.2 0 0-52 62.7-68.2 79-5.3 5.3-11.1 4.8-11-5.7 0-6.9.4-85.7.4-85.7-.1 0-.1 0 0 0-101.8-28.2-95.8-134.3-94.7-189.8 1.1-55.5 11.6-101 42.6-131.6 55.7-50.5 170.4-43 170.4-43 96.9.4 143.3 29.6 154.1 39.4 35.7 30.6 53.9 103.8 40.6 211.1zm-139-80.8c.4 8.6-12.5 9.2-12.9.6-1.1-22-11.4-32.7-32.6-33.9-8.6-.5-7.8-13.4.7-12.9 27.9 1.5 43.4 17.5 44.8 46.2zm20.3 11.3c1-42.4-25.5-75.6-75.8-79.3-8.5-.6-7.6-13.5.9-12.9 58 4.2 88.9 44.1 87.8 92.5-.1 8.6-13.1 8.2-12.9-.3zm47 13.4c.1 8.6-12.9 8.7-12.9.1-.6-81.5-54.9-125.9-120.8-126.4-8.5-.1-8.5-12.9 0-12.9 73.7.5 133 51.4 133.7 139.2zM374.9 329v.2c-10.8 19-31 40-51.8 33.3l-.2-.3c-21.1-5.9-70.8-31.5-102.2-56.5-16.2-12.8-31-27.9-42.4-42.4-10.3-12.9-20.7-28.2-30.8-46.6-21.3-38.5-26-55.7-26-55.7-6.7-20.8 14.2-41 33.3-51.8h.2c9.2-4.8 18-3.2 23.9 3.9 0 0 12.4 14.8 17.7 22.1 5 6.8 11.7 17.7 15.2 23.8 6.1 10.9 2.3 22-3.7 26.6l-12 9.6c-6.1 4.9-5.3 14-5.3 14s17.8 67.3 84.3 84.3c0 0 9.1.8 14-5.3l9.6-12c4.6-6 15.7-9.8 26.6-3.7 14.7 8.3 33.4 21.2 45.8 32.9 7 5.7 8.6 14.4 3.8 23.6z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__logo">
+        <picture>
+          <source srcset="img/logo.webp" type="image/webp">
+          <img loading="lazy" src="img/logo.png" class="image" width="138" height="108"
+            alt="Логотип салона студии SUGAR AURUM">
+        </picture>
+      </div>
+      <nav class="nav" title="меню">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--drop" href="#price">Услуги и цены</a>
+          </li>
+          <li class="nav__item">
+            <a href="#procedure" class="nav__link">Подготовка к процедуре</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">Контакты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link btn-reset" data-graph-path="form-popup"">Записаться</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__social">
+        <a class="footer__social-phone" title="Позвонить нам" href="tel:+79053234811">8 (905) 323-48-11</a>
+        <ul class="social" title="Написать нам">
+          <li class="social__item">
+            <a class="social__link" href="https://www.instagram.com/p/CMklvfYsfvn/?igshid=YmMyMTA2M2Y=" target="_blank" aria-label="Написать нам в Instagram">
+              <svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/@olenkasherstneva" target="_blank" aria-label="Написать нам в Telegram">
+              <svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 496 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z" />
+              </svg>
+            </a>
+          </li>
+              <li class="social__item">
+                <a class="social__link" href="https://wa.me/+79053234811" target="_blank" aria-label="Написать нам в Whatsapp">
+                  <svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                  </svg>
+                </a>
+              </li>
+            <li class="social__item">
+              <a class="social__link" href="https://wa.me/+79053234811" target="_blank" aria-label="Написать нам в Viber">
+                <svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M444 49.9C431.3 38.2 379.9.9 265.3.4c0 0-135.1-8.1-200.9 52.3C27.8 89.3 14.9 143 13.5 209.5c-1.4 66.5-3.1 191.1 117 224.9h.1l-.1 51.6s-.8 20.9 13 25.1c16.6 5.2 26.4-10.7 42.3-27.8 8.7-9.4 20.7-23.2 29.8-33.7 82.2 6.9 145.3-8.9 152.5-11.2 16.6-5.4 110.5-17.4 125.7-142 15.8-128.6-7.6-209.8-49.8-246.5zM457.9 287c-12.9 104-89 110.6-103 115.1-6 1.9-61.5 15.7-131.2 11.2 0 0-52 62.7-68.2 79-5.3 5.3-11.1 4.8-11-5.7 0-6.9.4-85.7.4-85.7-.1 0-.1 0 0 0-101.8-28.2-95.8-134.3-94.7-189.8 1.1-55.5 11.6-101 42.6-131.6 55.7-50.5 170.4-43 170.4-43 96.9.4 143.3 29.6 154.1 39.4 35.7 30.6 53.9 103.8 40.6 211.1zm-139-80.8c.4 8.6-12.5 9.2-12.9.6-1.1-22-11.4-32.7-32.6-33.9-8.6-.5-7.8-13.4.7-12.9 27.9 1.5 43.4 17.5 44.8 46.2zm20.3 11.3c1-42.4-25.5-75.6-75.8-79.3-8.5-.6-7.6-13.5.9-12.9 58 4.2 88.9 44.1 87.8 92.5-.1 8.6-13.1 8.2-12.9-.3zm47 13.4c.1 8.6-12.9 8.7-12.9.1-.6-81.5-54.9-125.9-120.8-126.4-8.5-.1-8.5-12.9 0-12.9 73.7.5 133 51.4 133.7 139.2zM374.9 329v.2c-10.8 19-31 40-51.8 33.3l-.2-.3c-21.1-5.9-70.8-31.5-102.2-56.5-16.2-12.8-31-27.9-42.4-42.4-10.3-12.9-20.7-28.2-30.8-46.6-21.3-38.5-26-55.7-26-55.7-6.7-20.8 14.2-41 33.3-51.8h.2c9.2-4.8 18-3.2 23.9 3.9 0 0 12.4 14.8 17.7 22.1 5 6.8 11.7 17.7 15.2 23.8 6.1 10.9 2.3 22-3.7 26.6l-12 9.6c-6.1 4.9-5.3 14-5.3 14s17.8 67.3 84.3 84.3c0 0 9.1.8 14-5.3l9.6-12c4.6-6 15.7-9.8 26.6-3.7 14.7 8.3 33.4 21.2 45.8 32.9 7 5.7 8.6 14.4 3.8 23.6z" />
+                </svg>
+              </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="form-popup">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="graph-modal__subtitle">Просто заполните форму заявки</div>
+      <div class="graph-modal__descr">и мы перезвоним вам в течении 20 минут</div>
+      <form action="#" class="form" method="POST" enctype="multipart/form-data">
+        <label class="form__label">
+        <input type="text" name="name" data-validate-field="name" size="30" class="input-reset form__input input-name" placeholder="Имя">
+        </label>
+        <label class="form__label">
+          <input type="tel" name="tel" data-validate-field="tel" size="30" class="input-reset form__input input-tel" placeholder="Телефон">
+        </label>
+        <button class="button button_aurum btn-reset form__btn">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <div class="graph-modal__mini" id="thanks">
+    <div class="graph-modal__container">
+      <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__subtitle">Спасибо за вашу заявку!</div>
+      <div class="graph-modal__descr">Мы свяжемся с вами в ближайшее время!</div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>
